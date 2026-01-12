@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Barion Pixel for WooCommerce
+ * Plugin Name: Full Barion Pixel for WooCommerce
  * Plugin URI: https://github.com/suhajda3/woocommerce-full-barion-pixel
  * Description: Full Barion Pixel implementation for WooCommerce with all mandatory events
  * Version: 1.1.1
