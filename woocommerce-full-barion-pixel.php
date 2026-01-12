@@ -127,8 +127,8 @@ window.bp = window.bp || function() {
     public function add_admin_menu() {
         add_submenu_page(
             'woocommerce',
-            __('Barion Pixel', 'barion-pixel-wc'),
-            __('Barion Pixel', 'barion-pixel-wc'),
+            __('Full Barion Pixel', 'barion-pixel-wc'),
+            __('Full Barion Pixel', 'barion-pixel-wc'),
             'manage_woocommerce',
             'barion-pixel-settings',
             array($this, 'settings_page')
@@ -187,7 +187,7 @@ window.bp = window.bp || function() {
         $gateway_has_pixel = isset($barion_gateway_settings['barion_pixel_id']) && !empty($barion_gateway_settings['barion_pixel_id']);
         ?>
         <div class="wrap">
-            <h1><?php _e('Barion Pixel Settings', 'barion-pixel-wc'); ?></h1>
+            <h1><?php _e('Full Barion Pixel Settings', 'barion-pixel-wc'); ?></h1>
             
             <?php if ($barion_gateway_installed): ?>
             <div class="notice notice-info">
@@ -310,7 +310,7 @@ window.bp = window.bp || function() {
                         if ($gateway_has_pixel && empty(get_option('barion_pixel_id'))) {
                             _e('Barion Payment Gateway Settings', 'barion-pixel-wc');
                         } elseif (!empty(get_option('barion_pixel_id'))) {
-                            _e('Barion Pixel Plugin Settings', 'barion-pixel-wc');
+                            _e('Full Barion Pixel Plugin Settings', 'barion-pixel-wc');
                         } else {
                             _e('Not configured', 'barion-pixel-wc');
                         }
